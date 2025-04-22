@@ -7,8 +7,7 @@ const Page = async () => {
 			method: "POST",
 			headers: {
 				accept: "application/json",
-				Authorization:
-					"Bearer io-v2-eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJvd25lciI6ImYxYjcwNmE2LWRlYTEtNDA3MC1iMDAyLTRmMzkwNTQ4YjIxOSIsImV4cCI6NDg5ODc1MDI3Nn0.DNVcPuWrEcPcXdHGXv9RrmSVcey8B2ntw0C8nTnkUkXhGCPP7St0wTQQugJr2M-e0w5LfAfaMhJ-5rELKBCJFg",
+				Authorization: `Bearer ${process.env.IO_API_KEY}`,
 				"content-type": "application/json",
 			},
 			body: JSON.stringify({
